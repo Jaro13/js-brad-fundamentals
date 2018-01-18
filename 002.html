@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Brad events</title>
+</head>
+
+<!-- tutaj takze po zaldowanie odpala sie funckak -->
+
+<body onload="showTime()">
+
+    <div class="container">
+
+        <button onclick="doClick();"> Click me!</button>
+        <br>
+        <button onclick="this.innerHTML='You clicked'"> Click me!</button>
+        <br>
+        <button onclick="changeText(this)"> Click me! Uzywamy this</button>
+    </div>
+
+
+    <h1 id="heading-id">To jest heading o id heading-id, zostanie on zmieniony</h1>
+
+    <button onclick="changeHeading()"> Klinnij aby zmienic heading</button>
+
+
+    <h1 id="time">Time</h1>
+
+    <button onmouseover="showTime()"> Klinnij aby ustawic czas</button>
+    <br>
+    <button onmouseout="clearTime()"> Klinnij aby wyczyscic czas</button>
+
+    <script src="002.js"></script>
+</body>
+
+</html>
